@@ -37,6 +37,8 @@ async function fetchHtml(url, retries = 3) {
     throw new Error(`Failed to fetch ${url}`);
 }
 
+// Mojeek
+
 async function getMojeekSearchPageUrl(query, page = 1) {
     const baseUrl = `https://www.mojeek.com/search?q=${encodeURIComponent(query)}`;
     if (page === 1) return baseUrl;
@@ -83,6 +85,8 @@ async function* scrapeMojeekSearchAsync(query, maxPages = 3) {
     }
 }
 
+// Bing
+
 async function scrapeBingImages(query) {
     const html = await fetchHtml(`https://www.bing.com/images/search?q=${encodeURIComponent(query)}`);
     const $ = cheerio.load(html);
@@ -99,6 +103,8 @@ async function scrapeBingImages(query) {
         };
     }).filter(Boolean);
 }
+
+// Brave Search
 
 async function scrapeBraveSearchImages(query) {
     const html = await fetchHtml(`https://search.brave.com/images?q=${encodeURIComponent(query)}`);
