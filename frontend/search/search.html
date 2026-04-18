@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link href="./search.css">
+    <link rel="stylesheet" href="../common/commonStyles.css">
+    <link rel="stylesheet" href="./search.css">
 </head>
 <body>
     <div id="leftSide">
-        <div id="searchBar"></div>
-        <div id="settingsButtons"></div>
-        <div id="searchResultCategories"></div>
+        <search-bar></search-bar>
+        <settings-button></settings-button>
+        <search-result-categories></search-result-categories>
         <!-- Okay so the structure of the search results is like so:
             [Favicon] [Website Name]        [...] <-- (Trackers and Ads and Detect Scam & Malware buttons)
                        [URL]
@@ -20,5 +21,6 @@
         <div id="searchResults"></div>
     </div>
     <script src="./search.js"></script>
+    <script src="../common/commonElements.js"></script>
 </body>
 </html>
