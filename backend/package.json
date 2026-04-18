@@ -1,4 +1,12 @@
 {
+  "name": "labsearch",
+  "version": "a0.1",
+  "description": "Customizable Meta Search Engine",
+  "main": "index.js",
+  "author": "LeastSaneDeveloper",
+  "scripts": {
+    "start": "node index.js"
+  },
   "type": "module",
   "dependencies": {
     "cheerio": "^1.1.2",
