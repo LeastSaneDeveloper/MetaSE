@@ -5,7 +5,7 @@ Levels:
 * Some concerns (Yellow)
 * Concerning (Orange)
 * High risk (Red)
-Users can also see why it's flagged, and they can see information about the domains.
+You can also see why it's flagged, and they can see information about the domains.
 
 # Ad, Tracker, and Privacy Detection
 This detects trackers, ad scripts, and fingerprinting behavior, and it assigns a privacy score. It'll show how many, what specific ads/trackers/scripts, etc.
